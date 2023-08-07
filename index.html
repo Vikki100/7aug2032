@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>child parent relationship</title>
+
+
+        <style>
+            .p{
+                width: 500px;
+                height: 500px;
+                background: red;
+            }
+            .c1{
+                width: 250px;
+                height: 250px;
+                background: yellow;
+            }
+            .c2{
+                width: 250px;
+                height: 250px;
+                background:green;
+            }
+            .cc1{
+                width: 150px;
+                height: 150px;
+                background: tomato;
+            }
+            /* desendent selectors 
+            
+            parent-selector child-selector {
+                property:value
+            }
+
+            parent ke hover pe child me chages hoone chahiye
+            */
+
+            .p:hover .c1{
+                background: palegreen;
+                border-radius: 250px;
+            }
+            .p:hover .c2{
+                background: cornflowerblue;
+                border-radius: 250px;
+            }
+            .p:hover .cc1{
+              border-radius: 150px;
+              background: hotpink;
+            }
+            .text{
+                background-color:gold;
+            }
+
+            .text:hover p{
+                text-transform: uppercase;
+                color:white;
+                font-size: 32px;
+                background: #000;
+            }
+
+
+            
+        </style>
+    </head>
+    <body>
+
+
+        <div class="p">
+            <div class="c1">
+                <div class="cc1"></div>
+            </div>
+            <div class="c2"></div>
+        </div>
+
+
+
+        <div class="text">
+            <p>hellow world</p>
+        </div>
+        
+    </body>
+</html>
